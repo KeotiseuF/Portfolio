@@ -1,0 +1,55 @@
+.main {
+    background: aqua;
+    height: 100vh;
+}
+
+.container_main-img {
+    position: absolute;
+    top: 0;
+    z-index: 3;
+}
+
+.purple_landscape {
+    position: relative;
+    z-index: 2;
+}
+
+.mini_curt {
+    position: absolute;
+    z-index: 1;
+}
+
+h1 {
+    text-align: center;
+    position: relative;
+    z-index: 4;
+    font-size: x-large;
+    margin-top: 32vh;
+    line-height: 40px;
+}
+
+/* Part mobile */
+
+@media (max-width: 430px)  {
+    .purple_landscape {
+        width: 100vw;
+        height: 50vh;
+    }
+    .mini_curt {
+        width: 74%;
+        height: 44%;
+        top: 8vh;
+        left: 16%;
+        animation: up 0.7s ease-in-out;
+    }
+}
+
+@keyframes up {
+    0% {
+        transform: translateY(60%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}

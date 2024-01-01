@@ -1,1 +1,18 @@
 @import-normalize;
+@import url('https://fonts.googleapis.com/css2?family=Kavoon&display=swap');
+
+body {
+    margin: 0;
+    width: 100%;
+    height: auto;
+    background: #f3e6f3;
+}
+
+h1 {
+    font-family: 'Kavoon', serif;
+    color: white;
+}
+
+button {
+    cursor: pointer;
+}

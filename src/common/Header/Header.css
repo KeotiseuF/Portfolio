@@ -1,0 +1,14 @@
+.header {
+    position: relative;
+    z-index: 99;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 40px;
+    margin-top: 25px;
+}
+
+.dark-mode {
+    width: 25px;
+    height: 25px;
+    background-color: white;
+}
