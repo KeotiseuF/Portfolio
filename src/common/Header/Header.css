@@ -1,14 +1,16 @@
 .header {
-    position: relative;
+    position: absolute;
     z-index: 99;
     display: flex;
     justify-content: space-between;
-    padding: 0px 40px;
+    padding: 0 13%;
     margin-top: 25px;
+    top: 0;
+    width: 74vw;
 }
 
 .dark-mode {
     width: 25px;
     height: 25px;
-    background-color: white;
+    background-color: transparent;
 }

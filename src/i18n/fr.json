@@ -1,5 +1,17 @@
 {
     "main": {
-        "developer": "DÉVELOPPEUR"
+        "developer": "DÉVELOPPEUR",
+        "icon-github": "icône Github",
+        "icon-linkedin": "icône Linkedin",
+        "icon-mail": "icône mail",
+        "presentation": "BIENVENUE SUR MON PORTFOLIO ! \n\n Grâce à plusieurs années d'expérience enrichissantes, j'ai réussi à élaborer ce portfolio.\n\n Ici, vous allez trouver mes réalisations ainsi que les étapes par lesquelles je suis passé qui m'ont été bénéfiques pour ma carrière professionnelle.",
+        "purple-landscape": "paysage violet",
+        "title-presentation": "PRÉSENTATION"
+    },
+    "nav-bar": {
+        "icon-contact": "icône contact",
+        "icon-home": "icône maison",
+        "icon-information": "icône information",
+        "icon-tasks": "icône tâches réalisées"
     }
 }

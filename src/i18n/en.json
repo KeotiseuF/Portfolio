@@ -1,5 +1,17 @@
 {
     "main": {
-        "developer": "DEVELOPER"
+        "developer": "DEVELOPER",
+        "icon-github": "Github icon",
+        "icon-linkedin": "Linkedin icon",
+        "icon-mail": "mail icon",
+        "presentation": "WELCOME TO MY PORTFOLIO !\n\n Thanks to several years of enriching experience, I have managed to develop this portfolio.\n\n Here, you will find my accomplishments as well as the steps I have gone through that have been beneficial to my professional career.",
+        "purple-landscape": "purple landscape",
+        "title-presentation": "PRESENTATION"
+    },
+    "nav-bar": {
+        "icon-contact": "contact icon",
+        "icon-home": "home icon",
+        "icon-information": "information icon",
+        "icon-tasks": "tasks completed icon"
     }
 }
