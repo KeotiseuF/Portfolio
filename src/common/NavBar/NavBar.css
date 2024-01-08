@@ -1,13 +1,27 @@
 nav {
-    position: sticky;
-    top: 92%;
+    position: fixed;
+    bottom: 0;
     background: #3a2069;
     height: 50px;
+    width: 100%;
     padding-top: 15px;
+    z-index: 100;
 }
 
 ul {
     display: flex;
     justify-content: space-evenly;
     justify-content: space-around;
+}
+
+a {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+}
+a:focus {
+    outline: none;
+}
+
+a:active > img {
+    filter: brightness(0.5);
 }

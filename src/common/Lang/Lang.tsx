@@ -40,7 +40,7 @@ const Lang = () => {
                     { lang.toUpperCase() }
                     { displayLanguages && 
                     <ul>
-                        { langSelect !== 'fr' && <li onClick={() => changeLanguage(Language.FR)}>FR</li>}
+                        { langSelect !== 'fr' && <li onClick={() => changeLanguage(Language.FR)}>FR</li> }
                         { langSelect !== 'en' && <li onClick={() => changeLanguage(Language.EN)}>EN</li> }
                     </ul> }
                 </button>

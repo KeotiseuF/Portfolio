@@ -13,5 +13,13 @@
         "icon-home": "icône maison",
         "icon-information": "icône information",
         "icon-tasks": "icône tâches réalisées"
-    }
+    },
+    "projects": {
+        "cards": {
+            "groupomania": "Piiquante est une marque de condiment à base de piment qui m'avait confié comme mission de développer",
+            "piiquante": "Piiquante est une marque de condiment à base de piment qui m'avait confié comme mission de développer",
+            "nsm": "Piiquante est une marque de condiment à base de piment qui m'avait confié comme mission de développer"
+        },
+        "title": "PROJETS"
+    } 
 }

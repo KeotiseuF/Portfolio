@@ -6,6 +6,7 @@ body {
     width: 100%;
     height: auto;
     background: #f3e6f3;
+    padding-bottom: 50px;
 }
 
 h1 {
@@ -25,6 +26,17 @@ h2 {
     border-radius: 10px;
 }
 
+h3 {
+    font-family: 'Kavoon', serif;
+    color: #3a2069;
+    letter-spacing: 1px;
+    margin-top: 25px;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 2.5px;
+    text-decoration-color: #3a2069;
+}
+
 button {
     cursor: pointer;
     font-family: 'Lora', serif;
@@ -39,4 +51,11 @@ p {
     font-family: 'Lora', serif;
     color: #3a2069;
     white-space: pre-line;
+}
+
+div[class*='container_'] {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 15px;
 }

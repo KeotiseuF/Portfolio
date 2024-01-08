@@ -46,11 +46,7 @@ h1 {
 }
 
 .container_presentation {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
     margin-top: 6vh;
-    padding: 0 15px;
 }
 
 p {

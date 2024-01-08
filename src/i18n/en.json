@@ -13,5 +13,13 @@
         "icon-home": "home icon",
         "icon-information": "information icon",
         "icon-tasks": "tasks completed icon"
-    }
+    },
+    "projects": {
+        "cards": {
+            "groupomania": "Piiquante is a chili-based condiment brand that had entrusted me with the task of development.",
+            "piiquante": "Piiquante est une marque de condiment à base de piment qui m'avait confié comme mission de développer",
+            "nsm": "Piiquante est une marque de condiment à base de piment qui m'avait confié comme mission de développer"
+        },
+        "title": "PROJECTS"
+    } 
 }
