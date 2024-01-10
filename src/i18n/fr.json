@@ -1,4 +1,24 @@
 {
+    "about-me": {
+        "presentation": {
+            "part1": "Cela fait maintenant deux ans que j'ai décidé de revenir dans le monde de l'informatique.\n J'ai entamé ce parcours par une formation de développeur web chez OpenClassrooms durant ma première année, une expérience enrichissante qui m'a ouvert les portes de l'école ISCOD pour ma deuxième année.\n Vous pouvez retrouver mon ancien portfolio ",
+            "part2": "Cette année-là, j'ai suivi un cursus en alternance pour obtenir le diplôme 'Concepteur développeur d'applications'. Cette formation m'a permis de découvrir toutes les phases de création d'une application, depuis la modélisation des besoins avec UML jusqu'au déploiement depuis Docker.",
+            "part3": "Pour mon alternance j'ai eu l'opportunité de rejoindre l'équipe de SUEZ Consulting. Cette expérience fut précieuse, elle m'a permis de renforcer mes compétences et de contribuer à divers projets destinés à leurs clients"
+        },
+        "title": "À PROPOS DE MOI"
+    },
+    "contact": {
+        "checkmark-message": "Je suis reconnaissant pour votre e-mail et vous assure une réponse dans les meilleurs délais.",
+        "checkmark": "coche",
+        "enter-email": "Entrer votre email",
+        "enter-name": "Entrer votre nom",
+        "enter-text": "Entrer votre texte...",
+        "email": "Email :",
+        "name": "Nom :",
+        "text": "Message :",
+        "submit": "Envoyer",
+        "title": "CONTACTEZ-MOI"
+    },
     "main": {
         "developer": "DÉVELOPPEUR",
         "icon-github": "icône Github",
@@ -16,10 +36,10 @@
     },
     "projects": {
         "cards": {
-            "groupomania": "Piiquante est une marque de condiment à base de piment qui m'avait confié comme mission de développer",
-            "piiquante": "Piiquante est une marque de condiment à base de piment qui m'avait confié comme mission de développer",
-            "nsm": "Piiquante est une marque de condiment à base de piment qui m'avait confié comme mission de développer"
+            "groupomania": "Groupomania est un projet où j'avais pour mission de développer un réseau social interne allant du frontend au backend.\n\n J'ai mis en place :\n\n • MERN stack,\n • des hooks,\n • des règles de l'OWASP,\n • d'une API REST,\n • des données de connexion sécurisées...",
+            "nsm": "No Sleep Money est un projet personnel dédié à la gestion des investissements et inclura des articles fondés sur l'économie\n C'est important pour moi car cela me permettra de me tenir informé, de renforcer mes connaissances dans ce domaine.\n\n Actuellement en cours de développement.",
+            "piiquante": "Piiquante est un projet où j'avais pour mission de mettre en place la partir back-end d'une application web de critique des sauces piquantes.\n\n J'ai mis en place :\n\n • MongoDB, Express, Bcrypt, \n • liaison entre 2 servers,\n • différentes routes pour l'API,\n • différents rôles,\n • authentification des requêtes..."
         },
         "title": "PROJETS"
-    } 
+    }
 }

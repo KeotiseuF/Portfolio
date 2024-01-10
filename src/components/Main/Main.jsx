@@ -22,7 +22,7 @@ function Main() {
       <div className='container-title'>
         <h1>
             FANCHONNA Curtis <br/>
-            {t('main.developer')} FULL STACK
+            {t('main.developer')} FULL-STACK
         </h1>
         <div className='container-icons'>      
             <a href='https://github.com/KeotiseuF'>

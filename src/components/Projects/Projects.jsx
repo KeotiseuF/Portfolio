@@ -18,7 +18,8 @@ function Projects() {
         const cardClasses = `card ${ checkClick === 'goBack' && toTurn === card.id ? 'turned-card' : (checkClick === 'goFront' && toTurn === card.id) || toTurn !== card.id ? 'init-card' : '' }`;
         const frontCardClasses = `front-card ${ checkClick === 'goBack' && toTurn === card.id ? 'hide-front-card' : (checkClick === 'goFront' && toTurn === card.id) || toTurn !== card.id ? 'init-front-card' : ''}`;
         const backCardClasses = `back-card ${ checkClick === 'goBack' && toTurn === card.id ? 'display-back-card' : (checkClick === 'goFront' && toTurn === card.id) || toTurn !== card.id ? 'init-back-card' : ''}`;
-        
+        const inBuild = card.id === 2 ? 'in-build' : 'display-link-site';
+
         return ( 
             <div key={card.id} className={cardClasses}>
                 <div className={frontCardClasses}>
@@ -32,7 +33,7 @@ function Projects() {
                         </div>
                         <div className='container-links'>
                             <div><a href={ card.lien_github }><img src={iconGitHub} alt="lien github" /></a></div>
-                            <div><a href={ card.lien_site }><img src={iconSite} alt="lien site" /></a></div>
+                            <div className={inBuild}><a href={ card.lien_site }><img src={iconSite} alt="lien site" /></a></div>
                             <div><button onClick={() => turnCard(card.id, setCheckClick('goBack'))}><img src={iconTurn} alt="circular arrow" /></button></div>
                         </div>
                     </div>

@@ -5,6 +5,11 @@ import nsm from "../assets/nsm.png"
 
 //Images stacks
 import angularjs from "../assets/icon-angularjs.png"
+import bootstrap from "../assets/icon-bootstrap.png"
+import mongodb from "../assets/icon-mongodb.png"
+import nodejs from "../assets/icon-nodejs.png"
+import reactjs from "../assets/icon-reactjs.png"
+import build from "../assets/icon-build.png"
 
 const DataCards = [
     {
@@ -14,8 +19,9 @@ const DataCards = [
         alt: "piiquante",
         stacks: [
             { icon: angularjs, alt: 'angularjs' },
-            { icon: angularjs, alt: 'angularjs' },
-            { icon: angularjs, alt: 'angularjs' }
+            { icon: bootstrap, alt: 'bootstrap' },
+            { icon: mongodb, alt: 'mongodb' },
+            { icon: nodejs, alt: 'nodejs' }
         ],
         description: 'piiquante',
         lien_site: "https://keotiseuf.github.io/P6---Construisez-une-API-s-curis-e-pour-une-application-d-avis-gastronomiques/",
@@ -27,12 +33,9 @@ const DataCards = [
         url_image: groupomania,
         alt: "groupomania",
         stacks: [
-            { icon: angularjs, alt: 'angularjs' },
-            { icon: angularjs, alt: 'angularjs' },
-            { icon: angularjs, alt: 'angularjs' },
-            { icon: angularjs, alt: 'angularjs' },
-            { icon: angularjs, alt: 'angularjs' },
-            { icon: angularjs, alt: 'angularjs' }
+            { icon: reactjs, alt: 'reactjs' },
+            { icon: mongodb, alt: 'mongodb' },
+            { icon: nodejs, alt: 'nodejs' }
         ],
         description: "groupomania",
         lien_site: "https://keotiseuf.github.io/P7-Creez-un-reseau-social-d-entreprise/",
@@ -44,7 +47,9 @@ const DataCards = [
         url_image: nsm,
         alt: "No Sleep Money",
         stacks: [
-            { icon: angularjs, alt: 'angularjs' },
+            { icon: build, alt: 'build' },
+            { icon: build, alt: 'build' },
+            { icon: build, alt: 'build' }
         ],
         description: "nsm",
         lien_site: "",

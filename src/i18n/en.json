@@ -1,4 +1,24 @@
 {
+    "about-me": {
+        "presentation": {
+            "part1": "It has been two years since I decided to return to the world of IT. I began this journey with a web developer training at OpenClassrooms during my first year, an enriching experience that opened the doors to the ISCOD school for my second year.\n You can find my previous portfolio ",
+            "part2": "That year, I pursued a work-study program to earn the 'Application Developer Designer' diploma. This training allowed me to discover all the phases of creating an application, from modeling needs with UML to deployment using Docker.",
+            "part3": "For my work-study, I had the opportunity to join the SUEZ Consulting team. This experience was invaluable, it allowed me to enhance my skills and contribute to various projects for their clients."
+        },
+        "title": "ABOUT ME"
+    }, 
+    "contact": {
+        "checkmark-message": "I am grateful for your email and assure you a response at the earliest convenience.",
+        "checkmark": "checkmark",
+        "enter-email": "Enter your email",
+        "enter-name": "Enter your name",
+        "enter-text": "Enter your text...",
+        "email": "Email :",
+        "name": "Name :",
+        "text": "Message :",
+        "submit": "Submit",
+        "title": "CONTACT ME"
+    },
     "main": {
         "developer": "DEVELOPER",
         "icon-github": "Github icon",
@@ -16,10 +36,10 @@
     },
     "projects": {
         "cards": {
-            "groupomania": "Piiquante is a chili-based condiment brand that had entrusted me with the task of development.",
-            "piiquante": "Piiquante est une marque de condiment à base de piment qui m'avait confié comme mission de développer",
-            "nsm": "Piiquante est une marque de condiment à base de piment qui m'avait confié comme mission de développer"
+            "groupomania": "Groupomania is a project where I was tasked with developing an internal social network covering everything from frontend to backend.\n\n I set up :\n\n • MERN stack,\n • hooks,\n • OWASP rules,\n • a REST API,\n • secure login data...",
+            "nsm": "No Sleep Money is a personal project dedicated to investment management and will include articles based on economics.\n\n This is important to me as it allows me to stay informed and strengthen my knowledge in this field.\n\n Currently under development.",
+            "piiquante": "Piiquante' is a project where I was tasked with implementing the back-end part of a web application for reviewing hot sauces.\n\n I set up :\n\n • MongoDB, Express, Bcrypt,\n • connection between 2 servers,\n • various routes for the API,\n • different roles,\n • authentication of requests..."
         },
         "title": "PROJECTS"
-    } 
+    }
 }

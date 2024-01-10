@@ -76,23 +76,38 @@
     justify-content: space-between;
 }
 
+.container-stack {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .container-links {
     text-align: initial;
     display: flex;
     justify-content: space-around;
 }
 
-.container-links > div, .container-links > div > a, .container-links > div > button {
+.container-links > div, .display-link-site > a, .display-link-site > button {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.container-links > div:nth-child(2) {
+.container-links > div:nth-child(2):not(.in-build) {
     border-style: none solid none solid;
     border-width: 2.5px;
     border-color: #3a2069;
     padding: 0 25px;
+}
+
+.in-build {
+    border-style: solid;
+    border-color: #3a2069;
+    border-width: 1.5px;
+}
+
+.in-build > a {
+    display: none;
 }
 
 .circularArrow {

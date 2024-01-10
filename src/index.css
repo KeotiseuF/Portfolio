@@ -1,5 +1,5 @@
 @import-normalize;
-@import url('https://fonts.googleapis.com/css2?family=Kavoon&family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lemon&family=Lora&display=swap');
 
 body {
     margin: 0;
@@ -10,14 +10,15 @@ body {
 }
 
 h1 {
-    font-family: 'Kavoon', serif;
+    font-family: 'Lemon', serif;
     color: #f3e6f3;
-    font-size: 5.6vw;
+    font-size: 4.7vw;
     letter-spacing: 3px;
+    padding: 0 15px;
 }
 
 h2 {
-    font-family: 'Kavoon', serif;
+    font-family: 'Lemon', serif;
     font-size: 5.6vw;
     color: #3a2069;
     border: double 5px #3a2069;
@@ -27,7 +28,7 @@ h2 {
 }
 
 h3 {
-    font-family: 'Kavoon', serif;
+    font-family: 'Lemon', serif;
     color: #3a2069;
     letter-spacing: 1px;
     margin-top: 25px;
@@ -47,7 +48,7 @@ button {
     line-height: 25px;
 }
 
-p {
+p, label {
     font-family: 'Lora', serif;
     color: #3a2069;
     white-space: pre-line;

@@ -1,0 +1,62 @@
+.container_contact {
+    margin-top: 35px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 50px;
+    width: 100%;
+}
+
+.form > label {
+    margin-bottom: 10px;
+}
+
+.form > input {
+    margin-bottom: 30px;
+    border: solid 1px #3A2069;
+    border-radius: 25px;
+    background: #f3e6f3;
+    height: 30px;
+    padding: 0 15px;
+}
+
+.form > textarea {
+    border: solid 1px #3A2069;
+    border-radius: 20px;
+    height: 120px;
+    outline: none;
+    padding: 15px 15px;
+    background: #f3e6f3;
+}
+
+.form > input:focus, .form > textarea:focus {
+    border: solid 3px #3A2069;
+    outline: none;
+}
+
+.form > button {
+    margin-top: 25px;
+    background: #3a2069;
+    border-radius: 25px;
+    color: #f3e6f3;
+    width: 150px;
+    align-self: center;
+}
+
+.container-checkmark {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 175px;
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+
+.container-checkmark > img {
+    width: 100px;
+}
