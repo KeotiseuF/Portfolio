@@ -39,7 +39,7 @@ function Projects() {
                     </div>
                 </div>
                 <div className={backCardClasses}>
-                    <p>{ t(`projects.cards.${card.description}`) }</p>
+                    <p className='text-card'>{ t(`projects.cards.${card.description}`) }</p>
                     <div><button onClick={() => turnCard(card.id, setCheckClick('goFront'))}><img className="circularArrow" src={iconTurn} alt="circular arrow" /></button></div>
                 </div>
             </div> 

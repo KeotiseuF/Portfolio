@@ -180,3 +180,24 @@
         visibility: hidden;
     }
 }
+
+/* Part tablet */
+@media (min-width: 500px)  {
+    .card {
+        width: 435px;
+        height: 416px;
+    }
+
+    .container-img-project {
+        width: 385px;
+        height: 175px;
+    }    
+
+    .container-img-project > img {
+        width: 265px;
+    }
+
+    h3 {
+        font-size: x-large;
+    }
+}

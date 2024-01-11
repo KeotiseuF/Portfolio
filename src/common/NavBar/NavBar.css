@@ -16,7 +16,6 @@ ul {
 
 a {
     -webkit-tap-highlight-color: transparent;
-    -webkit-touch-callout: none;
 }
 a:focus {
     outline: none;

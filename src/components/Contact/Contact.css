@@ -45,6 +45,10 @@
     align-self: center;
 }
 
+.form > button:hover {
+    animation: clickButton 0.3s ease-in-out alternate;
+}
+
 .container-checkmark {
     display: flex;
     flex-direction: column;
@@ -59,4 +63,46 @@
 
 .container-checkmark > img {
     width: 100px;
+}
+
+@keyframes clickButton {
+    0% {
+        color: #f3e6f3;
+        transform: scale(1);;
+    }
+    100% {
+        color: #a19c9c;
+        transform: scale(0.9);
+    }
+}
+
+/* Part tablet */
+@media (min-width: 500px)  {
+    .form > input {
+        height: 45px;
+        font-size: 21px;
+    }
+
+    .form > textarea {
+        height: 145px;
+        font-size: 21px;
+    }
+
+    .form > button {
+        height: 45px;
+        font-size: 21px;
+        width: 175px;
+    }
+
+    .container-checkmark {
+        margin-bottom: 100px;
+    }
+
+    .container-checkmark > img {
+        width: 145px;
+    }
+
+    .container-checkmark > p {
+        width: 465px;
+    }
 }
