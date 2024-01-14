@@ -13,13 +13,12 @@ function Main() {
   let { t } = useTranslation();
 
   return (
-    <div id="Main">
+    <div id="Main" className="main">
       <Header/>
       <div className='container-img'>
         <img className='purple_landscape' src={purpleLandscape} alt={t('main.purple-landscape')} />
         <img className="mini_curt" src={miniCurt}  alt="mini curt" />
-      </div>
-      <div className='container-title'>
+        <div className='container-title'>
         <h1>
             FANCHONNA Curtis <br/>
             {t('main.developer')} FULL-STACK
@@ -35,6 +34,7 @@ function Main() {
               <img src={iconMail} alt={t('main.icon-mail')} />
             </a>
         </div>
+      </div>
       </div>
       <div className='container_presentation'>
         <h2>{t('main.title-presentation')}</h2>

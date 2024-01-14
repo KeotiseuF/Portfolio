@@ -14,6 +14,10 @@ ul {
     justify-content: space-around;
 }
 
+.ul_text {
+    display: none;
+}
+
 a {
     -webkit-tap-highlight-color: transparent;
 }
@@ -23,4 +27,34 @@ a:focus {
 
 a:active > img {
     filter: brightness(0.5);
+}
+
+/* Part laptop */
+@media (min-width: 800px) {
+    nav {
+        position: initial;
+        background: none;
+        padding: 0;
+    }
+
+    .ul_icon {
+        display: none;
+    }
+
+    .ul_text {
+        display: flex;
+        justify-content: space-around;
+        height: 100%;
+        align-items: center;
+    }
+
+    .ul_text > li > a {
+        color: #f3e6f3;
+        text-decoration: underline;
+        text-underline-offset: 8px;
+    }
+
+    .ul_text > li > a:hover {
+        color: #a19c9c;
+    }
 }

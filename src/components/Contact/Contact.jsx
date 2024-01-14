@@ -1,12 +1,27 @@
 import './Contact.css';
 import { useTranslation } from 'react-i18next';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 import checkmark from "../../assets/icon-coche.png";
+import bigCheckmark from "../../assets/icon-big-coche.png";
 
 function Contact() {
     let { t } = useTranslation();
     const [state, handleSubmit] = useForm("xzbnzpdj");
+    const [checkmarkMobile, setCheckmarkMobile] = useState(Boolean);
+
+    useEffect(() => {
+      window.innerWidth < 500 && setCheckmarkMobile(true);
+      function handleScroll(e) {
+        if(window.innerWidth < 500) {
+            setCheckmarkMobile(true);
+        } else {
+            setCheckmarkMobile(false);
+        }
+      }
+      window.addEventListener('resize', handleScroll);
+      return () => window.removeEventListener('resize', handleScroll);
+    }, [checkmarkMobile]);
 
     return (
         <div id='Contact' className='container_contact'>
@@ -61,7 +76,7 @@ function Contact() {
                 </button>
             </form> :
             <div className='container-checkmark'>
-                <img src={checkmark} alt={t('contact.checkmark')} />
+                <img src={ checkmarkMobile ? checkmark : bigCheckmark } alt={t('contact.checkmark')} />
                 <p>{t('contact.checkmark-message')}</p>
             </div>}
         </div>

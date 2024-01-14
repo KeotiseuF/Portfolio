@@ -29,10 +29,14 @@
         "title-presentation": "PRÉSENTATION"
     },
     "nav-bar": {
+        "about-me": "Mon parcours",
+        "contact": "Contact",
+        "home": "Accueil",
         "icon-contact": "icône contact",
         "icon-home": "icône maison",
         "icon-information": "icône information",
-        "icon-tasks": "icône tâches réalisées"
+        "icon-tasks": "icône tâches réalisées",
+        "projects": "Projets"
     },
     "projects": {
         "cards": {

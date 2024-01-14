@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './App.css';
 
 // Components
@@ -8,11 +8,26 @@ import Projects from './components/Projects/Projects';
 import AboutMe from './components/AboutMe/AboutMe';
 import Contact from './components/Contact/Contact';
 
-function App() { 
+function App() {
+  const [displayNav, setDisplayNav] = useState(Boolean);
+
+  useEffect(() => {
+    window.innerWidth < 800 && setDisplayNav(true);
+    function handleScroll(e) {
+      if(window.innerWidth < 800) {
+        setDisplayNav(true);
+      } else {
+        setDisplayNav(false);
+      }
+    }
+    window.addEventListener('resize', handleScroll);
+    return () => window.removeEventListener('resize', handleScroll);
+  }, [displayNav]);
+
   return (
     <div id="App">
       <Main />
-      <NavBar />
+      { displayNav && <NavBar /> }
       <Projects />
       <AboutMe />
       <Contact />

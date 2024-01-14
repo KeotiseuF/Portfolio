@@ -78,20 +78,9 @@
 
 /* Part tablet */
 @media (min-width: 500px)  {
-    .form > input {
-        height: 45px;
-        font-size: 21px;
-    }
-
-    .form > textarea {
-        height: 145px;
-        font-size: 21px;
-    }
-
-    .form > button {
-        height: 45px;
-        font-size: 21px;
-        width: 175px;
+    .form {     
+        width: 45%;
+        min-width: 440px;
     }
 
     .container-checkmark {
@@ -99,7 +88,7 @@
     }
 
     .container-checkmark > img {
-        width: 145px;
+        width: initial;
     }
 
     .container-checkmark > p {

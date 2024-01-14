@@ -7,6 +7,9 @@ body {
     height: auto;
     background: #f3e6f3;
     padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 h1 {
@@ -68,20 +71,28 @@ div[class*='container_'] {
 
 /* Part tablet */
 @media (min-width: 500px)  {
+    h1 {
+        font-size: x-large;
+    }
+    
     h2 {
         border: double 10px #3a2069;
         padding: 5px;
+        font-size: 30px;
     }
 
     h3 {
         font-size: x-large;
     }
+}
 
-    p, label {
-        font-size: 21px;
+/* Part laptop */
+@media (min-width: 800px)  {
+    body {
+        padding: 0;
     }
 
-    img {
-        width: 40px;
+    #Projects, #AboutMe {
+        padding-top: 60px;
     }
 }

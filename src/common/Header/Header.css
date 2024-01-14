@@ -3,14 +3,32 @@
     z-index: 99;
     display: flex;
     justify-content: space-between;
-    padding: 0 13%;
-    margin-top: 25px;
-    top: 0;
-    width: 74vw;
+    margin-top: 50px;
+    width: 74%;
+    max-width: 1300px;
 }
 
 .dark-mode {
-    width: 25px;
-    height: 25px;
+    width: 40.2px;
+    box-shadow: -1.5px 1.5px 0 #f3e6f3;
     background-color: transparent;
+    border: solid 2px #f3e6f3;
+    height: 27px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Part laptop */
+@media (min-width: 800px)  {
+    .header {
+        background: #7c57bd;
+        width: 50%;
+        padding: 13px 30px 5px 30px;
+        border-radius: 35px;
+        min-width: 655px;
+        position: fixed;
+        margin-top: 0px;
+    }
 }

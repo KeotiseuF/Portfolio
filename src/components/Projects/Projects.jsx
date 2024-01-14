@@ -32,22 +32,22 @@ function Projects() {
                             { displayStacks(card.stacks) }
                         </div>
                         <div className='container-links'>
-                            <div><a href={ card.lien_github }><img src={iconGitHub} alt="lien github" /></a></div>
-                            <div className={inBuild}><a href={ card.lien_site }><img src={iconSite} alt="lien site" /></a></div>
-                            <div><button onClick={() => turnCard(card.id, setCheckClick('goBack'))}><img src={iconTurn} alt="circular arrow" /></button></div>
+                            <div><a href={ card.lien_github }><img className='icon-card' src={iconGitHub} alt="lien github" /></a></div>
+                            <div className={inBuild}><a href={ card.lien_site }><img className='icon-card' src={iconSite} alt="lien site" /></a></div>
+                            <div><button onClick={() => turnCard(card.id, setCheckClick('goBack'))}><img className='icon-card' src={iconTurn} alt="circular arrow" /></button></div>
                         </div>
                     </div>
                 </div>
                 <div className={backCardClasses}>
                     <p className='text-card'>{ t(`projects.cards.${card.description}`) }</p>
-                    <div><button onClick={() => turnCard(card.id, setCheckClick('goFront'))}><img className="circularArrow" src={iconTurn} alt="circular arrow" /></button></div>
+                    <div><button onClick={() => turnCard(card.id, setCheckClick('goFront'))}><img className=" icon-card circularArrow" src={iconTurn} alt="circular arrow" /></button></div>
                 </div>
             </div> 
         )
     })
 
     function displayStacks(stacks) {
-        let listStacks = stacks.map((stack, index) => <img key={index} src={ stack.icon } alt={ stack.alt } />);
+        let listStacks = stacks.map((stack, index) => <img className='icon-card' key={index} src={ stack.icon } alt={ stack.alt } />);
         return listStacks;
     }
 
