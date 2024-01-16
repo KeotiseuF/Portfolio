@@ -19,6 +19,10 @@
         "submit": "Envoyer",
         "title": "CONTACTEZ-MOI"
     },
+    "header": {
+        "moon": "lune",
+        "sun": "soleil"
+    },
     "main": {
         "developer": "DÉVELOPPEUR",
         "icon-github": "icône Github",

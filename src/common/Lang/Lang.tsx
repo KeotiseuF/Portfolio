@@ -1,14 +1,15 @@
+import './Lang.css';
 import React, { useState } from "react";
 import { useTranslation } from 'react-i18next';
 import { Language } from '../../services/Language.ts';
-import './Lang.css';
  
-const Lang = () => {
+const Lang = ({theme}) => {
     const { i18n } = useTranslation();
     const [lang, setLang] = useState<Language>(i18n.language as Language);
     const [displayLanguages, setDisplayLanguages] = useState(false);
     const [langSelect, setLangSelect] = useState(lang as String);
-    
+    const classButton = theme === 'light' ? 'light-button-header' : 'dark-button-header';
+
     window.addEventListener('click', (event: Event) => {
         const target = event.target as HTMLButtonElement;
         if(target.id !== 'button-languages') setDisplayLanguages(false);
@@ -36,7 +37,7 @@ const Lang = () => {
     return (
         <div>
             <div>
-                <button id="button-languages" onClick={displayLang}>
+                <button id="button-languages" className={classButton} onClick={displayLang}>
                     { lang.toUpperCase() }
                     { displayLanguages && 
                     <ul>

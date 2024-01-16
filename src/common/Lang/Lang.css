@@ -1,8 +1,19 @@
 button {
     width: 40px;
-    box-shadow: -1.5px 1.5px 0 #f3e6f3;
     border-radius: 10px;
     margin-bottom: 15px;
+}
+
+.light-button-header {
+    box-shadow: -1.5px 1.5px 0 #f3e6f3;
+    color: #f3e6f3;
+    border: solid 2px #f3e6f3;
+}
+
+.dark-button-header {
+    box-shadow: -1.5px 1.5px 0 #7c57bd;
+    color: #7c57bd;
+    border: solid 2px #7c57bd;
 }
 
 ul {

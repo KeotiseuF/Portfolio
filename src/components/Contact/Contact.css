@@ -15,37 +15,40 @@
 
 .form > input {
     margin-bottom: 30px;
-    border: solid 1px #3A2069;
     border-radius: 25px;
-    background: #f3e6f3;
     height: 30px;
     padding: 0 15px;
 }
 
 .form > textarea {
-    border: solid 1px #3A2069;
     border-radius: 20px;
     height: 120px;
     outline: none;
     padding: 15px 15px;
-    background: #f3e6f3;
 }
 
 .form > input:focus, .form > textarea:focus {
-    border: solid 3px #3A2069;
     outline: none;
 }
 
 .form > button {
     margin-top: 25px;
-    background: #3a2069;
     border-radius: 25px;
-    color: #f3e6f3;
     width: 150px;
     align-self: center;
 }
 
-.form > button:hover {
+.light-button {
+    background: #f3e6f3;
+    color: #3a2069;
+}
+
+.dark-button {
+    background: #3a2069;
+    color: #f3e6f3;
+}
+
+.form > button:active {
     animation: clickButton 0.3s ease-in-out alternate;
 }
 
@@ -65,10 +68,29 @@
     width: 100px;
 }
 
+.light-form {
+    background: #f3e6f3;
+    border: solid 1px #3A2069;
+    color: #3A2069;
+}
+
+.dark-form {
+    background: #3A2069;
+    border: solid 1px #f3e6f3;
+    color: #f3e6f3;
+}
+
+.light-form:focus {
+    border: solid 3px #3A2069;
+}
+.dark-form:focus {
+    border: solid 3px #f3e6f3;
+}
+
 @keyframes clickButton {
     0% {
         color: #f3e6f3;
-        transform: scale(1);;
+        transform: scale(1);
     }
     100% {
         color: #a19c9c;

@@ -1,7 +1,6 @@
 nav {
     position: fixed;
     bottom: 0;
-    background: #3a2069;
     height: 50px;
     width: 100%;
     padding-top: 15px;
@@ -33,7 +32,7 @@ a:active > img {
 @media (min-width: 800px) {
     nav {
         position: initial;
-        background: none;
+        background: none !important;
         padding: 0;
     }
 
@@ -49,7 +48,6 @@ a:active > img {
     }
 
     .ul_text > li > a {
-        color: #f3e6f3;
         text-decoration: underline;
         text-underline-offset: 8px;
     }

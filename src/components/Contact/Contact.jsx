@@ -1,14 +1,23 @@
 import './Contact.css';
 import { useTranslation } from 'react-i18next';
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { useForm, ValidationError } from '@formspree/react';
-import checkmark from "../../assets/icon-coche.png";
-import bigCheckmark from "../../assets/icon-big-coche.png";
+import purpleCheckmark from "../../assets/purple-coche.png";
+import purplebigCheckmark from "../../assets/big-purple-coche.png";
+import pinkCheckmark from "../../assets/pink-coche.png";
+import pinkBigCheckmark from "../../assets/big-pink-coche.png";
+import { ThemeContext } from '../../services/ThemeContext';
 
 function Contact() {
     let { t } = useTranslation();
+    const { theme } = useContext(ThemeContext);
     const [state, handleSubmit] = useForm("xzbnzpdj");
     const [checkmarkMobile, setCheckmarkMobile] = useState(Boolean);
+    const h2Class = theme === 'light' ? 'dark-h2' : 'light-h2';
+    const textClass = theme === 'light' ? 'dark-text' : 'light-text';
+    const colorForm = theme === 'light' ? 'light-form' : 'dark-form';
+    const cocheSrc = checkmarkMobile && theme === 'light' ? purpleCheckmark : checkmarkMobile && theme !== 'light' ? pinkCheckmark : !checkmarkMobile && theme === 'light' ? purplebigCheckmark : pinkBigCheckmark;
+    const buttonClass = theme === 'light' ? 'dark-button' : 'light-button';
 
     useEffect(() => {
       window.innerWidth < 500 && setCheckmarkMobile(true);
@@ -25,13 +34,14 @@ function Contact() {
 
     return (
         <div id='Contact' className='container_contact'>
-            <h2>{t('contact.title')}</h2>
-            { !state.succeeded ? <form className='form' onSubmit={handleSubmit}>
-                <label htmlFor="name">
+            <h2 className={h2Class}>{t('contact.title')}</h2>
+            { state.succeeded ? <form className='form' onSubmit={handleSubmit}>
+                <label className={textClass} htmlFor="name">
                     {t('contact.name')}
                 </label>
                 <input
                     id="name"
+                    className={colorForm}
                     type="text" 
                     name="name"
                     placeholder={t("contact.enter-name")}
@@ -42,11 +52,12 @@ function Contact() {
                     field="name"
                     errors={state.errors}
                 />
-                <label htmlFor="email">
+                <label className={textClass} htmlFor="email">
                     {t('contact.email')}
                 </label>
                 <input
                     id="email"
+                    className={colorForm}
                     type="email" 
                     name="email"
                     placeholder={t('contact.enter-email')}
@@ -57,11 +68,12 @@ function Contact() {
                     field="email"
                     errors={state.errors}
                 />
-                <label htmlFor="message">
+                <label className={textClass} htmlFor="message">
                     {t('contact.text')}
                 </label>
                 <textarea
                     id="message"
+                    className={colorForm}
                     name="message"
                     placeholder={t('contact.enter-text')}
                     required
@@ -71,13 +83,13 @@ function Contact() {
                     field="message"
                     errors={state.errors}
                 />
-                <button type="submit" disabled={state.submitting}>
+                <button className={buttonClass} type="submit" disabled={state.submitting}>
                     {t('contact.submit')}
                 </button>
             </form> :
             <div className='container-checkmark'>
-                <img src={ checkmarkMobile ? checkmark : bigCheckmark } alt={t('contact.checkmark')} />
-                <p>{t('contact.checkmark-message')}</p>
+                <img src={ cocheSrc } alt={t('contact.checkmark')} />
+                <p className={textClass}>{t('contact.checkmark-message')}</p>
             </div>}
         </div>
     )

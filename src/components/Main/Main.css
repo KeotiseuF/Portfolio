@@ -21,6 +21,10 @@
     width: 100%;
 }
 
+.dark-purple_landscape {
+    filter: brightness(0.7);
+}
+
 .mini_curt {
     position: relative;
     z-index: 1;
@@ -42,7 +46,6 @@
 h1 {
     text-align: center;
     line-height: 40px;
-    text-shadow: 0 3px #3a2069;
     white-space: nowrap;
 }
 

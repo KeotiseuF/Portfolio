@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from 'react';
 import './App.css';
+import React, { useEffect, useState } from 'react';
+import { ThemeContext } from './services/ThemeContext';
 
 // Components
 import Main from './components/Main/Main';
@@ -10,6 +11,12 @@ import Contact from './components/Contact/Contact';
 
 function App() {
   const [displayNav, setDisplayNav] = useState(Boolean);
+  const [theme, setTheme] = useState('light');
+  const valueContext = { theme, setTheme };
+
+  const body = document.getElementsByTagName('body');
+
+  body[0].setAttribute('class', theme === 'light' ? 'light-background' : 'dark-background');
 
   useEffect(() => {
     window.innerWidth < 800 && setDisplayNav(true);
@@ -26,11 +33,13 @@ function App() {
 
   return (
     <div id="App">
-      <Main />
-      { displayNav && <NavBar /> }
-      <Projects />
-      <AboutMe />
-      <Contact />
+      <ThemeContext.Provider value={valueContext}>
+        <Main />
+        { displayNav && <NavBar /> }
+        <Projects />
+        <AboutMe />
+        <Contact />
+      </ThemeContext.Provider>
     </div>
   );
 }

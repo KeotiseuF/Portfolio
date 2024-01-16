@@ -19,6 +19,10 @@
         "submit": "Submit",
         "title": "CONTACT ME"
     },
+    "header": {
+        "moon": "moon",
+        "sun": "sun"
+    },
     "main": {
         "developer": "DEVELOPER",
         "icon-github": "Github icon",

@@ -7,16 +7,24 @@
 }
 
 .card {
-    background: #f3e6f3;
     width: 285px;
     height: 350px;
-    box-shadow: 5px 5px 15px #3a2069;
     border-radius: 25px;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 25px;
     margin-bottom: 50px;
+}
+
+.light-card {
+    background: #f3e6f3;
+    box-shadow: 5px 5px 15px #3a2069;
+}
+
+.dark-card {
+    background: #3a2069;
+    box-shadow: 5px 5px 15px #f3e6f3;
 }
 
 .turned-card {
@@ -60,8 +68,14 @@
     align-items: center;
     width: 240px;
     height: 140px;
-    box-shadow: inset -3px -3px 11px #3a2069;
     border-radius: 12px;
+}
+
+.light-container-img {
+    box-shadow: inset -3px -3px 11px #f3e6f3;
+}
+.dark-container-img {
+    box-shadow: inset -3px -3px 11px #3a2069;
 }
 
 .container-img-project > img {
@@ -93,21 +107,34 @@
     align-items: center;
 }
 
-.container-links > div:nth-child(2):not(.in-build) {
+.light-link-site:not(.light-in-build, .dark-in-build) {
+    border-style: none solid none solid; 
+    border-width:  2.5px; 
+    border-color: #f3e6f3;
+    padding: 0 25px;
+}
+
+.dark-link-site:not(.light-in-build, .dark-in-build) {
     border-style: none solid none solid;
-    border-width: 2.5px;
+    border-width:  2.5px; 
     border-color: #3a2069;
     padding: 0 25px;
 }
 
-.in-build {
-    border-style: solid;
-    border-color: #3a2069;
-    border-width: 1.5px;
+.light-in-build {
+    border: solid 1.5px #f3e6f3;
+}
+.dark-in-build {
+    border: solid 1.5px #3a2069;
 }
 
-.in-build > a {
+.light-in-build > a, .dark-in-build > a {
     display: none;
+}
+
+.turn-button {
+    margin: 0;
+    display: flex;
 }
 
 .circularArrow {
@@ -205,7 +232,7 @@
         width: 40px;
     }
 
-    .text-card {
+    .size-text-card {
         font-size: 21px;     
     }
 }

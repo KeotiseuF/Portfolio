@@ -5,7 +5,6 @@ body {
     margin: 0;
     width: 100%;
     height: auto;
-    background: #f3e6f3;
     padding-bottom: 50px;
     display: flex;
     flex-direction: column;
@@ -14,7 +13,6 @@ body {
 
 h1 {
     font-family: 'Lemon', serif;
-    color: #f3e6f3;
     font-size: 4.7vw;
     letter-spacing: 3px;
     padding: 0 15px;
@@ -23,21 +21,37 @@ h1 {
 h2 {
     font-family: 'Lemon', serif;
     font-size: 5.6vw;
-    color: #3a2069;
-    border: double 5px #3a2069;
     padding: 5px;
     letter-spacing: 5px;
     border-radius: 10px;
 }
 
+.light-h2 {
+    color: #f3e6f3;
+    border: double 5px #f3e6f3;
+}
+
+.dark-h2 {
+    color: #3a2069;
+    border: double 5px #3a2069;
+}
+
 h3 {
     font-family: 'Lemon', serif;
-    color: #3a2069;
     letter-spacing: 1px;
     margin-top: 25px;
     text-decoration: underline;
     text-underline-offset: 10px;
     text-decoration-thickness: 2.5px;
+}
+
+.light-h3 {
+    color: #f3e6f3;
+    text-decoration-color: #f3e6f3;
+}
+
+.dark-h3 {
+    color: #3a2069;
     text-decoration-color: #3a2069;
 }
 
@@ -45,16 +59,14 @@ button {
     cursor: pointer;
     font-family: 'Lora', serif;
     font-size: medium;
-    color: #f3e6f3;
     background-color: transparent;
-    border: solid 2px #f3e6f3;
+    border: none;
     line-height: 25px;
     -webkit-tap-highlight-color: transparent;
 }
 
 p, label {
     font-family: 'Lora', serif;
-    color: #3a2069;
     white-space: pre-line;
 }
 
@@ -69,6 +81,24 @@ div[class*='container_'] {
     padding: 0 20px;
 }
 
+/* Settings theme */
+
+.light-text {
+    color: #f3e6f3;
+}
+
+.dark-text {
+    color: #3a2069;
+}
+
+.light-background {
+    background-color: #f3e6f3;
+}
+
+.dark-background {
+    background-color: #3a2069;
+}
+
 /* Part tablet */
 @media (min-width: 500px)  {
     h1 {
@@ -76,9 +106,16 @@ div[class*='container_'] {
     }
     
     h2 {
-        border: double 10px #3a2069;
         padding: 5px;
         font-size: 30px;
+    }
+
+    .light-h2-tablet {
+        border: double 10px #f3e6f3;
+    }
+    
+    .dark-h2-tablet {
+        border: double 10px #3a2069;
     }
 
     h3 {

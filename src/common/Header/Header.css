@@ -10,9 +10,7 @@
 
 .dark-mode {
     width: 40.2px;
-    box-shadow: -1.5px 1.5px 0 #f3e6f3;
     background-color: transparent;
-    border: solid 2px #f3e6f3;
     height: 27px;
     border-radius: 10px;
     display: flex;
@@ -20,15 +18,39 @@
     align-items: center;
 }
 
+.dark-mode > input {
+    position: absolute;
+    width: 39px;
+    height: 30px;
+    filter: opacity(0);
+    cursor: pointer;
+}
+
+.input-light {
+    box-shadow: -1.5px 1.5px 0 #f3e6f3;
+    border: solid 2px #f3e6f3;    
+}
+
+.input-dark {
+    box-shadow: -1.5px 1.5px 0 #7c57bd;
+    border: solid 2px #7c57bd;    
+}
+
 /* Part laptop */
 @media (min-width: 800px)  {
     .header {
-        background: #7c57bd;
         width: 50%;
         padding: 13px 30px 5px 30px;
         border-radius: 35px;
         min-width: 655px;
         position: fixed;
         margin-top: 0px;
+    }
+    .header-light-laptop {
+        background: #7c57bd;
+    }
+    
+    .header-dark-laptop {
+        background: #f3e6f3;   
     }
 }

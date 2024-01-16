@@ -6,3 +6,7 @@
 .container-presentation > p {
     text-align: center;
 }
+
+.link-old-class {
+    text-underline-offset: 5px;
+}
