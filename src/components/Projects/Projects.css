@@ -19,12 +19,12 @@
 
 .light-card {
     background: #f3e6f3;
-    box-shadow: 5px 5px 15px #3a2069;
+    box-shadow: 2px 2px 4px 2px #cdb1ff;
 }
 
 .dark-card {
     background: #3a2069;
-    box-shadow: 5px 5px 15px #f3e6f3;
+    box-shadow: 2px 2px 4px 2px #0b002f;
 }
 
 .turned-card {
@@ -72,10 +72,10 @@
 }
 
 .light-container-img {
-    box-shadow: inset -3px -3px 11px #f3e6f3;
+    box-shadow: inset 0px 0px 50px #0b002f;
 }
 .dark-container-img {
-    box-shadow: inset -3px -3px 11px #3a2069;
+    box-shadow: inset 0px 0px 50px #cdb1ff;
 }
 
 .container-img-project > img {

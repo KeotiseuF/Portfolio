@@ -35,7 +35,7 @@ function Contact() {
     return (
         <div id='Contact' className='container_contact'>
             <h2 className={h2Class}>{t('contact.title')}</h2>
-            { state.succeeded ? <form className='form' onSubmit={handleSubmit}>
+            { !state.succeeded ? <form className='form' onSubmit={handleSubmit}>
                 <label className={textClass} htmlFor="name">
                     {t('contact.name')}
                 </label>
