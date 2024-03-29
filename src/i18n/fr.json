@@ -46,7 +46,7 @@
         "cards": {
             "groupomania": "Groupomania est un projet où j'avais pour mission de développer un réseau social interne allant du frontend au backend.\n\n J'ai mis en place :\n\n • MERN stack,\n • des hooks,\n • des règles de l'OWASP,\n • d'une API REST,\n • des données de connexion sécurisées...",
             "nsm": "No Sleep Money est un projet personnel dédié à la gestion des investissements et inclura des articles fondés sur l'économie\n C'est important pour moi car cela me permettra de me tenir informé, de renforcer mes connaissances dans ce domaine.\n\n Actuellement en cours de développement.",
-            "piiquante": "Piiquante est un projet où j'avais pour mission de mettre en place la partir back-end d'une application web de critique des sauces piquantes.\n\n J'ai mis en place :\n\n • MongoDB, Express, Bcrypt, \n • liaison entre 2 servers,\n • différentes routes pour l'API,\n • différents rôles,\n • authentification des requêtes..."
+            "piiquante": "Piiquante est un projet où j'avais pour mission de mettre en place la partie back-end d'une application web de critique des sauces piquantes.\n\n J'ai mis en place :\n\n • MongoDB, Express, Bcrypt, \n • liaison entre 2 servers,\n • différentes routes pour l'API,\n • différents rôles,\n • authentification des requêtes..."
         },
         "title": "PROJETS"
     }

@@ -5,7 +5,9 @@ import { Language } from "./services/Language.ts";
 import translationEN from './i18n/en.json';
 import translationFR from './i18n/fr.json';
  
-let defaultLanguage = Language.FR;
+const params = new URLSearchParams(document.location.search);
+
+let defaultLanguage =  params.get('lang') === 'EN' ? Language.EN : Language.FR;
  
 // the translations
 const resources = {

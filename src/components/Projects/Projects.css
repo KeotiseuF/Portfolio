@@ -52,6 +52,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    position: absolute;
+    top: 0;
 }
 
 .display-back-card {
@@ -156,10 +158,12 @@
 
 @keyframes hideFrontCard {
     0% {
-        display: initial;
+        opacity: 1;
+        visibility: visible;
     }
     100% {
-        display: none;
+        opacity: 0;
+        visibility: hidden;
     }
 }
 
@@ -190,10 +194,12 @@
 
 @keyframes initFrontCard {
     0% {
-        display: none;
+        opacity: 0;
+        visibility: hidden;
     }
     100% {
-        display: initial;
+        opacity: 1;
+        visibility: visible; 
     }
 }
 

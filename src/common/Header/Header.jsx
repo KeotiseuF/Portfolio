@@ -31,7 +31,7 @@ function Header () {
     
     return (
         <div className={headerClass}>
-            <div className={inputClass} tabindex="0">
+            <div className={inputClass} tabIndex="0">
                 <input
                     type="checkbox"
                     checked={theme === 'dark'}

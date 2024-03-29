@@ -14,10 +14,10 @@ import pinkIconTurn from '../../assets/pink-icon-turn.png';
 
 function Projects() {
     let { t } = useTranslation();
-    const data = DataCards;
+    const cards = DataCards;
     const [toTurn, setToTurn] = useState(undefined);
-    const [checkClick, setCheckClick] = useState('');
     const { theme } = useContext(ThemeContext)
+    const [displayFront, setDisplayFront] = useState(true);
 
     const addColor = (value, srcImg = []) => {
         const h2Class = theme === 'light' ? 'dark-h2 dark-h2-tablet' : 'light-h2 light-h2-tablet';
@@ -47,13 +47,13 @@ function Projects() {
             return textClass;
         }
     }
-
+    
     // Create Card;
-    let projects = data.map(card => {
-        const cardClasses = `${addColor('card')} ${ checkClick === 'goBack' && toTurn === card.id ? 'turned-card' : (checkClick === 'goFront' && toTurn === card.id) || toTurn !== card.id ? 'init-card' : ''}`;
-        const frontCardClasses = `front-card ${ checkClick === 'goBack' && toTurn === card.id ? 'hide-front-card' : (checkClick === 'goFront' && toTurn === card.id) || toTurn !== card.id ? 'init-front-card' : ''}`;
-        const backCardClasses = `back-card ${ checkClick === 'goBack' && toTurn === card.id ? 'display-back-card' : (checkClick === 'goFront' && toTurn === card.id) || toTurn !== card.id ? 'init-back-card' : ''}`;
-        const inBuild = card.id === 2 ? addColor('build') : 'display-link-site';
+    let projects = cards.map(card => {
+        const cardClasses = `${addColor('card')} ${ !displayFront && toTurn === card.id ? 'turned-card' : (displayFront && toTurn === card.id) || toTurn !== card.id ? 'init-card' : ''}`;
+        const frontCardClasses = `front-card ${ !displayFront && toTurn === card.id ? 'hide-front-card' : (displayFront && toTurn === card.id) || toTurn !== card.id ? 'init-front-card' : ''}`;
+        const backCardClasses = `back-card ${ !displayFront && toTurn === card.id ? 'display-back-card' : (displayFront && toTurn === card.id) || toTurn !== card.id ? 'init-back-card' : ''}`;
+        const inBuild = card.id === 2 ? addColor('build') : 'isplay-link-site';
 
         return ( 
             <div key={card.id} className={cardClasses}>
@@ -69,13 +69,13 @@ function Projects() {
                         <div className='container-links'>
                             <div><a href={ card.lien_github }><img className='icon-card' src={addColor('img', [purpleGitHub, pinkGitHub])} alt="lien github" /></a></div>
                             <div className={inBuild}><a className={addColor('site')} href={ card.lien_site }><img className='icon-card' src={addColor('img', [purpleIconSite, pinkIconSite])} alt="lien site" /></a></div>
-                            <div><button className='turn-button' onClick={() => turnCard(card.id, setCheckClick('goBack'))}><img className='icon-card' src={addColor('img', [purpleIconTurn, pinkIconTurn])} alt="circular arrow" /></button></div>
+                            <div><button className='turn-button' onClick={() => turnCard(card.id, false)}><img className='icon-card' src={addColor('img', [purpleIconTurn, pinkIconTurn])} alt="circular arrow" /></button></div>
                         </div>
                     </div>
                 </div>
                 <div className={backCardClasses}>
                     <p className={addColor('text')}>{ t(`projects.cards.${card.description}`) }</p>
-                    <div><button className='turn-button' onClick={() => turnCard(card.id, setCheckClick('goFront'))}><img className=" icon-card circularArrow" src={addColor('img', [purpleIconTurn, pinkIconTurn])} alt="circular arrow" /></button></div>
+                    <div><button className='turn-button' onClick={() => turnCard(card.id, true)}><img className=" icon-card circularArrow" src={addColor('img', [purpleIconTurn, pinkIconTurn])} alt="circular arrow" /></button></div>
                 </div>
             </div> 
         )
@@ -86,9 +86,10 @@ function Projects() {
         return listStacks;
     }
 
-    function turnCard(id) {
+    function turnCard(id, checkSide) { 
         setToTurn(id);
-    };
+        setDisplayFront(checkSide);
+    }
 
     return (
         <div id="Projects" className='container_projects'>
