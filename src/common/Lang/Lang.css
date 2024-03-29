@@ -2,6 +2,9 @@ button {
     width: 40px;
     border-radius: 10px;
     margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .light-button-header {
