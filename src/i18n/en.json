@@ -1,9 +1,10 @@
 {
     "about-me": {
         "presentation": {
-            "part1": "It has been two years since I decided to return to the world of IT. I began this journey with a web developer training at OpenClassrooms during my first year, an enriching experience that opened the doors to the ISCOD school for my second year.\n You can find my previous portfolio ",
-            "part2": "That year, I pursued a work-study program to earn the 'Application Developer Designer' diploma. This training allowed me to discover all the phases of creating an application, from modeling needs with UML to deployment using Docker.",
-            "part3": "For my work-study, I had the opportunity to join the SUEZ Consulting team. This experience was invaluable, it allowed me to enhance my skills and contribute to various projects for their clients."
+            "part1": "It's been a few years since I decided to return to the world of computing. I started this journey with a web developer training at OpenClassrooms during my first year, an enriching experience that opened the doors to the ISCOD school for my second year.\n You can find my old portfolio ",
+            "part2": "During the year at ISCOD, I followed an apprenticeship program to obtain the 'Application Developer Designer' diploma. This training allowed me to discover all the phases of creating an application, from modeling needs with UML to deployment with Docker.",
+            "part3": "For my apprenticeship, I had the opportunity to join the SUEZ Consulting team. This experience was valuable, allowing me to strengthen my skills and contribute to various projects for their clients.",
+            "part4": "Currently, I have decided to use my skills for a non-profit named WeAreSwissborg (WASB) and to develop a project for my personal need called No Sleep Money (NSM). These projects allow me to learn new things, keep my knowledge up to date, and work in a team."
         },
         "title": "ABOUT ME"
     }, 
@@ -45,7 +46,7 @@
     "projects": {
         "cards": {
             "groupomania": "Groupomania is a project where I was tasked with developing an internal social network covering everything from frontend to backend.\n\n I set up :\n\n • MERN stack,\n • hooks,\n • OWASP rules,\n • a REST API,\n • secure login data...",
-            "nsm": "No Sleep Money is a personal project dedicated to investment management and will include articles based on economics.\n\n This is important to me as it allows me to stay informed and strengthen my knowledge in this field.\n\n Currently under development.",
+            "nsm": "No Sleep Money is a personal project dedicated to investment management and will include articles based on economics.\n\n I set up :\n\n • ExcelJS,\n • Cerbot,\n • Chart.js,\n • un VPS,\n • API coingecko and twelvedata...",
             "piiquante": "Piiquante' is a project where I was tasked with implementing the back-end part of a web application for reviewing hot sauces.\n\n I set up :\n\n • MongoDB, Express, Bcrypt,\n • connection between 2 servers,\n • various routes for the API,\n • different roles,\n • authentication of requests..."
         },
         "title": "PROJECTS"

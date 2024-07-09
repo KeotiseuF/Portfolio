@@ -47,13 +47,12 @@ function Projects() {
             return textClass;
         }
     }
-    
+
     // Create Card;
     let projects = cards.map(card => {
         const cardClasses = `${addColor('card')} ${ !displayFront && toTurn === card.id ? 'turned-card' : (displayFront && toTurn === card.id) || toTurn !== card.id ? 'init-card' : ''}`;
         const frontCardClasses = `front-card ${ !displayFront && toTurn === card.id ? 'hide-front-card' : (displayFront && toTurn === card.id) || toTurn !== card.id ? 'init-front-card' : ''}`;
         const backCardClasses = `back-card ${ !displayFront && toTurn === card.id ? 'display-back-card' : (displayFront && toTurn === card.id) || toTurn !== card.id ? 'init-back-card' : ''}`;
-        const inBuild = card.id === 2 ? addColor('build') : 'isplay-link-site';
 
         return ( 
             <div key={card.id} className={cardClasses}>
@@ -67,8 +66,8 @@ function Projects() {
                             { displayStacks(card.stacks) }
                         </div>
                         <div className='container-links'>
-                            <div><a href={ card.lien_github }><img className='icon-card' src={addColor('img', [purpleGitHub, pinkGitHub])} alt="lien github" /></a></div>
-                            <div className={inBuild}><a className={addColor('site')} href={ card.lien_site }><img className='icon-card' src={addColor('img', [purpleIconSite, pinkIconSite])} alt="lien site" /></a></div>
+                            <div><a href={ card.lien_github } target='_blanket'><img className='icon-card' src={addColor('img', [purpleGitHub, pinkGitHub])} alt="lien github" /></a></div>
+                            <div className='isplay-link-site'><a className={addColor('site')} href={ card.lien_site } target='_blanket'><img className='icon-card' src={addColor('img', [purpleIconSite, pinkIconSite])} alt="lien site" /></a></div>
                             <div><button className='turn-button' onClick={() => turnCard(card.id, false)}><img className='icon-card' src={addColor('img', [purpleIconTurn, pinkIconTurn])} alt="circular arrow" /></button></div>
                         </div>
                     </div>

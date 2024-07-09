@@ -1,15 +1,17 @@
 // Images projets
-import piiquante from "../assets/piiquante.png"
-import groupomania from "../assets/groupomania.png"
-import nsm from "../assets/nsm.png"
+import piiquante from "../assets/piiquante.png";
+import groupomania from "../assets/groupomania.png";
+import nsm from "../assets/nsm.png";
 
 //Images stacks
-import angularjs from "../assets/icon-angularjs.png"
-import bootstrap from "../assets/icon-bootstrap.png"
-import mongodb from "../assets/icon-mongodb.png"
-import nodejs from "../assets/icon-nodejs.png"
-import reactjs from "../assets/icon-reactjs.png"
-import build from "../assets/icon-build.png"
+import angularjs from "../assets/icon-angularjs.png";
+import bootstrap from "../assets/icon-bootstrap.png";
+import mongodb from "../assets/icon-mongodb.png";
+import nodejs from "../assets/icon-nodejs.png";
+import reactjs from "../assets/icon-reactjs.png";
+import vitejs from "../assets/icon-vitejs.png";
+import coingecko from "../assets/icon-coingecko.png";
+import chartjs from "../assets/icon-chartjs.png";
 
 const DataCards = [
     {
@@ -24,7 +26,7 @@ const DataCards = [
             { icon: nodejs, alt: 'nodejs' }
         ],
         description: 'piiquante',
-        lien_site: "https://keotiseuf.github.io/P6---Construisez-une-API-s-curis-e-pour-une-application-d-avis-gastronomiques/",
+        lien_site: "https://piiquante.curtis-dev.eu",
         lien_github: "https://github.com/KeotiseuF/P6---Construisez-une-API-s-curis-e-pour-une-application-d-avis-gastronomiques",
     },
     {
@@ -38,7 +40,7 @@ const DataCards = [
             { icon: nodejs, alt: 'nodejs' }
         ],
         description: "groupomania",
-        lien_site: "https://keotiseuf.github.io/P7-Creez-un-reseau-social-d-entreprise/",
+        lien_site: "https://groupomania.curtis-dev.eu",
         lien_github: "https://github.com/KeotiseuF/P7-Creez-un-reseau-social-d-entreprise",
     },
     {
@@ -47,13 +49,14 @@ const DataCards = [
         url_image: nsm,
         alt: "No Sleep Money",
         stacks: [
-            { icon: build, alt: 'build' },
-            { icon: build, alt: 'build' },
-            { icon: build, alt: 'build' }
+            { icon: vitejs, alt: 'vitejs' },
+            { icon: nodejs, alt: 'nodejs' },
+            { icon: chartjs, alt: 'chartjs' },
+            { icon: coingecko, alt: 'coingecko' }
         ],
         description: "nsm",
-        lien_site: "",
-        lien_github: "",
+        lien_site: "https://nsm.curtis-dev.eu",
+        lien_github: "https://github.com/KeotiseuF/NSM",
     },
 ]
 

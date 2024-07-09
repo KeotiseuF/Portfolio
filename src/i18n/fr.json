@@ -1,9 +1,10 @@
 {
     "about-me": {
         "presentation": {
-            "part1": "Cela fait maintenant deux ans que j'ai décidé de revenir dans le monde de l'informatique.\n J'ai entamé ce parcours par une formation de développeur web chez OpenClassrooms durant ma première année, une expérience enrichissante qui m'a ouvert les portes de l'école ISCOD pour ma deuxième année.\n Vous pouvez retrouver mon ancien portfolio ",
-            "part2": "Cette année-là, j'ai suivi un cursus en alternance pour obtenir le diplôme 'Concepteur développeur d'applications'. Cette formation m'a permis de découvrir toutes les phases de création d'une application, depuis la modélisation des besoins avec UML jusqu'au déploiement depuis Docker.",
-            "part3": "Pour mon alternance j'ai eu l'opportunité de rejoindre l'équipe de SUEZ Consulting. Cette expérience fut précieuse, elle m'a permis de renforcer mes compétences et de contribuer à divers projets destinés à leurs clients"
+            "part1": "Cela fait maintenant quelques années que j'ai décidé de revenir dans le monde de l'informatique.\n J'ai entamé ce parcours par une formation de développeur web chez OpenClassrooms durant ma première année, une expérience enrichissante qui m'a ouvert les portes de l'école ISCOD pour ma deuxième année.\n Vous pouvez retrouver mon ancien portfolio ",
+            "part2": "Pendant l'année chez ISCOD, j'ai suivi un cursus en alternance pour obtenir le diplôme de 'Concepteur Développeur d'Applications'. Cette formation m'a permis de découvrir toutes les phases de création d'une application, depuis la modélisation des besoins avec UML jusqu'au déploiement avec Docker.",
+            "part3": "Pour mon alternance, j'ai eu l'opportunité de rejoindre l'équipe de SUEZ Consulting. Cette expérience fut précieuse, elle m'a permis de renforcer mes compétences et de contribuer à divers projets destinés à leurs clients.",
+            "part4": "À l'heure actuelle, j'ai décidé de mettre mes compétences au profit d'une association nommée WeAreSwissborg (WASB) et de développer un projet pour mon besoin personnel nommé No Sleep Money (NSM). Ces projets me permettent d'apprendre de nouvelles choses, de garder à jour mes connaissances et de travailler en équipe."
         },
         "title": "À PROPOS DE MOI"
     },
@@ -45,7 +46,7 @@
     "projects": {
         "cards": {
             "groupomania": "Groupomania est un projet où j'avais pour mission de développer un réseau social interne allant du frontend au backend.\n\n J'ai mis en place :\n\n • MERN stack,\n • des hooks,\n • des règles de l'OWASP,\n • d'une API REST,\n • des données de connexion sécurisées...",
-            "nsm": "No Sleep Money est un projet personnel dédié à la gestion des investissements et inclura des articles fondés sur l'économie\n C'est important pour moi car cela me permettra de me tenir informé, de renforcer mes connaissances dans ce domaine.\n\n Actuellement en cours de développement.",
+            "nsm": "No Sleep Money est un projet personnel dédié à la gestion de ses investissements et inclura des articles fondés sur l'économie\n\n J'ai mis en place :\n\n • ExcelJS,\n • Cerbot,\n • Chart.js,\n • un VPS,\n • les API coingecko et twelvedata...",
             "piiquante": "Piiquante est un projet où j'avais pour mission de mettre en place la partie back-end d'une application web de critique des sauces piquantes.\n\n J'ai mis en place :\n\n • MongoDB, Express, Bcrypt, \n • liaison entre 2 servers,\n • différentes routes pour l'API,\n • différents rôles,\n • authentification des requêtes..."
         },
         "title": "PROJETS"
